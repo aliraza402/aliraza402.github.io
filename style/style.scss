@@ -18,6 +18,12 @@ body {
   border: 2px solid #203141;
 }
 
+.btn-primary:hover{
+  background-color: #203141;
+  border: 3px solid #203141;
+  transition: 0.1s;
+}
+
 .sectionOne {
   height: 100vh;
   // overflow: hidden;
@@ -142,6 +148,13 @@ nav {
   font-weight: bolder;
 }
 
+.h-flex{
+  display: flex;
+}
+
+.f-1{ flex: 1; }
+.f-5{ flex: 5; }
+
 .section-6 {
   .my-heading {
     line-height: 5px;
@@ -176,6 +189,63 @@ nav {
         transform: translate(100% , -90px);
       }
 
+    }
+
+  }
+}
+
+
+.section-7{
+  color: gray;
+  font-size: 13px;
+
+  i{
+    font-size: 15px;
+  }
+
+  h5{
+    color: black;
+    margin-bottom: 30px;
+  }
+
+  img{
+    width: 50px;
+    margin-bottom: 30px;
+  }
+
+  p{
+    margin-bottom: 5px;
+  }
+
+  .row{
+    border-bottom: 1px solid lightgray;
+  }
+
+  .f-links h5{
+    border-right: 1px solid lightgray ;
+    border-width: thin;
+  }
+
+  .social-icon i{
+    font-size: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+  }
+
+  .last-para{font-size: 15px;}
+
+  .footer-sec-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h5{
+      display: inline;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
   }
