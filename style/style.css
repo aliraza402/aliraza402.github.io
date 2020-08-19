@@ -94,4 +94,58 @@ nav img {
   align-items: center;
 }
 
+.group {
+  position: relative;
+}
+.group input {
+  align-self: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: inline;
+}
+.group a {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  right: 0;
+  background-color: #203141;
+  color: white;
+}
+
+.my-bolder {
+  font-weight: bolder;
+}
+
+.section-6 .my-heading {
+  line-height: 5px;
+}
+.section-6 .my-testo {
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+}
+.section-6 .my-testo i {
+  font-size: 30px;
+}
+.section-6 .my-testo .client-info {
+  position: absolute;
+  bottom: 0px;
+  transform: translate(0, 40%);
+  line-height: 0px;
+}
+.section-6 .my-testo .client-info img {
+  width: 150px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.section-6 .my-testo .client-info .client-text {
+  position: absolute;
+  right: 0;
+  transform: translate(100%, -90px);
+}
+
 /*# sourceMappingURL=style.css.map */

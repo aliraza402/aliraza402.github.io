@@ -32,7 +32,7 @@ body {
   width: 73%;
   background-color: $clrPrimary;
   background-image: url("../img/bg\ header.png");
-  background-size: 150% ;
+  background-size: 150%;
   position: absolute;
   top: 0;
   left: 0;
@@ -109,4 +109,69 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.group {
+  position: relative;
+  input {
+    align-self: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: inline;
+  }
+  a {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    right: 0;
+    background-color: $clrPrimary;
+    color: white;
+  }
+}
+
+.my-bolder{
+  font-weight: bolder;
+}
+
+.section-6 {
+  .my-heading {
+    line-height: 5px;
+  }
+
+  .my-testo {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    // box-shadow: 2px 2px 5px ;
+
+    i{
+      font-size: 30px;
+    }
+    .client-info{
+      position: absolute;
+      bottom: 0px;
+      transform: translate(0 , 40%);
+
+      line-height: 0px;
+
+      img{
+        width: 150px;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+      .client-text{
+        // background-color: red;
+        position: absolute;
+        right: 0;
+        // top: 0;
+        transform: translate(100% , -90px);
+      }
+
+    }
+
+  }
 }
