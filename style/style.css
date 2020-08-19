@@ -6,6 +6,11 @@
   background-color: #fff;
 }
 
+.btn-primary {
+  background-color: #203141;
+  border: 2px solid #203141;
+}
+
 .sectionOne {
   height: 100vh;
   top: 0;
