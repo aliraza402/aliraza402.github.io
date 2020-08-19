@@ -113,7 +113,7 @@ nav {
 }
 
 .my-service:hover {
-  transition:  0.5s;
+  transition:  0.5s ease-in-out;
   transform: scale(1.11);
   background-color: $clrPrimary;
   color: white;
@@ -277,7 +277,6 @@ nav {
 
 #myTab{
   border: none;
-
   .nav-tabs .nav-link{
     border: none;
   }
@@ -297,3 +296,23 @@ nav {
 
 
 
+.carousel-indicators li{
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.carousel-indicators .active {
+ width: 12px;
+ height: 12px;
+ margin-bottom: 10px;
+ background-color: #fff;
+}
+
+
+.form-control:focus{
+  box-shadow: none;
+  outline: none;
+}
