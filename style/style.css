@@ -182,10 +182,6 @@ nav img {
 .section-7 i {
   font-size: 15px;
 }
-.section-7 h5 {
-  color: black;
-  margin-bottom: 30px;
-}
 .section-7 img {
   width: 50px;
   margin-bottom: 30px;
@@ -196,7 +192,7 @@ nav img {
 .section-7 .row {
   border-bottom: 1px solid lightgray;
 }
-.section-7 .f-links h5 {
+.section-7 .f-links h6 {
   border-right: 1px solid lightgray;
   border-width: thin;
 }
@@ -207,6 +203,13 @@ nav img {
   border: 1px solid black;
   color: black;
   padding: 5px;
+  margin: 0px 5px;
+}
+.section-7 .social-icon i:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
 }
 .section-7 .last-para {
   font-size: 15px;
@@ -216,10 +219,11 @@ nav img {
   justify-content: space-between;
   align-items: center;
 }
-.section-7 .footer-sec-two h5 {
+.section-7 .footer-sec-two h6 {
   display: inline;
   padding-left: 30px;
   padding-right: 30px;
+  color: black;
 }
 
 .my-cara-style {
