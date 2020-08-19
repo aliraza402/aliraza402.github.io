@@ -79,10 +79,10 @@
 
         <div class="row mt-4 justify-content-around">
           <div class="col-md-4">
-            <div class="service_icon shadow">
-              <img src="img/Web_icon.png" class="img img-fluid" alt="" />
-            </div>
             <div class="my-center my-service shadow-sm service-card">
+              <div class="service_icon shadow">
+                <img src="img/Web_icon.png" class="img img-fluid" alt="" >
+              </div>
               <div class="px-4">
                 <h4>Web Development Service</h4>
                 <p>
@@ -95,10 +95,10 @@
           </div>
 
           <div class="col-md-4">
-            <div class="service_icon shadow">
-              <img src="img/Web_icon.png" class="img img-fluid" alt="" />
-            </div>
             <div class="my-center my-service shadow-sm service-card">
+              <div class="service_icon shadow">
+                <img src="img/Web_icon.png" class="img img-fluid" alt="" >
+              </div>
               <div class="px-4">
                 <h4>Web Development Service</h4>
                 <p>
@@ -111,10 +111,10 @@
           </div>
 
           <div class="col-md-4">
-            <div class="service_icon shadow">
-              <img src="img/Web_icon.png" class="img img-fluid" alt="" />
-            </div>
             <div class="my-center my-service shadow-sm service-card">
+              <div class="service_icon shadow">
+                <img src="img/Web_icon.png" class="img img-fluid" alt="" >
+              </div>
               <div class="px-4">
                 <h4>Web Development Service</h4>
                 <p>
@@ -158,31 +158,88 @@
             <p class="text-danger">Who We Are?</p>
             <h4>A collection of our latest work</h4>
           </div>
-          <div class="col-md-8 my-nav-links text-right">
-            <a href="" class="btn btn-primary rounded-pill">All Portfolio</a>
-            <a href="" class="btn">Mobile App</a>
-            <a href="" class="btn">Web App</a>
-            <a href="" class="btn">Product Design</a>
+          <div class="col-md-8 my-nav-links text-right nav nav-tabs" id="myTab" role="tablist" >
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#all" role="" aria-controls="all" aria-selected="true">All Projects</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#web" role="" aria-controls="web" aria-selected="false">Web App</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#mobile" role="" aria-controls="mobile" aria-selected="false">Mobile App</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#product" role="" aria-controls="product" aria-selected="false">Product Design</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-md-6">
-            <img src="img/JeweleryCut.png" class="img img-fluid shadow" alt="" />
-            <h5 class="mt-3 my-bold">Potion Paris</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora sint cum,
-              cupiditate natus ducimus quasi dolore aut illum repellat.
-            </p>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <img src="img/JeweleryCut.png" class="img img-fluid shadow" alt="" />
+                <h5 class="mt-3 my-bold">Potion Paris</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora sint cum,
+                  cupiditate natus ducimus quasi dolore aut illum repellat.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <img src="img/Trtle.png" class="img img-fluid shadow" alt="" />
+                <h5 class="mt-3 my-bold">Jewelery Cut</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora sint cum,
+                  cupiditate natus ducimus quasi dolore aut illum repellat.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <img src="img/Trtle.png" class="img img-fluid shadow" alt="" />
-            <h5 class="mt-3 my-bold">Jewelery Cut</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora sint cum,
-              cupiditate natus ducimus quasi dolore aut illum repellat.
-            </p>
+
+          <div class="tab-pane fade" id="web" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <img src="img/JeweleryCut.png" class="img img-fluid shadow" alt="" />
+                <h5 class="mt-3 my-bold">Potion Paris</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora sint cum,
+                  cupiditate natus ducimus quasi dolore aut illum repellat.
+                </p>
+              </div>
+            </div>
           </div>
+
+          <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <img src="img/Trtle.png" class="img img-fluid shadow" alt="" />
+                <h5 class="mt-3 my-bold">Jewelery Cut</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora sint cum,
+                  cupiditate natus ducimus quasi dolore aut illum repellat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <img src="img/JeweleryCut.png" class="img img-fluid shadow" alt="" />
+                <h5 class="mt-3 my-bold">Potion Paris</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora sint cum,
+                  cupiditate natus ducimus quasi dolore aut illum repellat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
         </div>
+
       </div>
     </div>
 
@@ -219,6 +276,75 @@
           </div>
 
           <div class="my-center">
+
+              
+              <div class="w-75 shadow-lg my-5 p-3 pb-5 my-testo">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2000">
+                  <div class="carousel-inner my-cara-style">
+                    <div class="carousel-item active">
+  
+                      <div class="my-quote p-5">
+                        <div class="text-left"><i class="ri-double-quotes-l"></i></div>
+                        <h6 class="text-left my-bold">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, est? Lorem
+                          ipsum dolor sit amet consectetur.
+                        </h6>
+                        <div class="text-right"><i class="ri-double-quotes-r"></i></div>
+                      </div>
+                      <div class="client-info py-3">
+                        <img src="img/face.jpg" alt="face client" class="img img-fluid shadow" />
+                        <div class="client-text text-left">
+                          <p class="my-bolder">Aryan Taj</p>
+                          <p>CEO Apple inc</p>
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                    <div class="carousel-item">
+  
+                      <div class="my-quote p-5">
+                        <div class="text-left"><i class="ri-double-quotes-l"></i></div>
+                        <h6 class="text-left my-bold">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, est? Lorem
+                          ipsum dolor sit amet consectetur.
+                        </h6>
+                        <div class="text-right"><i class="ri-double-quotes-r"></i></div>
+                      </div>
+                      <div class="client-info py-3">
+                        <img src="img/face.jpg" alt="face client" class="img img-fluid shadow" />
+                        <div class="client-text text-left">
+                          <p class="my-bolder">Aryan Taj</p>
+                          <p>CEO Baple inc</p>
+                        </div>
+                      </div>
+  
+                    </div>
+                    <div class="carousel-item ">
+  
+                      <div class="my-quote p-5">
+                        <div class="text-left"><i class="ri-double-quotes-l"></i></div>
+                        <h6 class="text-left my-bold">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, est? Lorem
+                          ipsum dolor sit amet consectetur.                      </h6>
+                        <div class="text-right"><i class="ri-double-quotes-r"></i></div>
+                      </div>
+                      <div class="client-info py-3">
+                        <img src="img/face.jpg" alt="face client" class="img img-fluid shadow" />
+                        <div class="client-text text-left">
+                          <p class="my-bolder">Aryan Taj</p>
+                          <p>CEO Cpple inc</p>
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<!-- 
+
             <div class="w-75 my-5 p-3 shadow-lg my-testo">
               <div class="my-quote p-5">
                 <div class="text-left"><i class="ri-double-quotes-l"></i></div>
@@ -228,7 +354,6 @@
                 </h6>
                 <div class="text-right"><i class="ri-double-quotes-r"></i></div>
               </div>
-
               <div class="client-info">
                 <img src="img/face.jpg" alt="face client" class="img img-fluid shadow" />
                 <div class="client-text text-left">
@@ -237,10 +362,15 @@
                 </div>
               </div>
             </div>
+
+ -->
+
+            
           </div>
         </div>
       </div>
     </div>
+
 
     <div class="section-7 backOne">
       <div class="container">
