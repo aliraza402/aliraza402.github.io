@@ -181,7 +181,8 @@ nav {
     .client-info{
       position: absolute;
       bottom: 0px;
-      transform: translate(0 , 30%);
+      left: 25px;
+      transform: translate(0 , 10%);
 
       line-height: 0px;
 
@@ -197,10 +198,13 @@ nav {
         // top: 0;
         transform: translate(100% , -90px);
       }
-
     }
 
   }
+  .my-quote{
+    padding-bottom: 100px !important;
+  }
+
 }
 
 
@@ -272,7 +276,7 @@ nav {
 .my-cara-style{
   // overflow-x: visible ;
 // overflow: visible;
-  overflow-y: inherit;
+  // overflow-y: inherit;
 }
 
 #myTab{
