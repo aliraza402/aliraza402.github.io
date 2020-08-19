@@ -148,6 +148,9 @@ nav {
     background-color: $clrPrimary;
     color: white;
   }
+  a:hover{
+    color: white;
+  }
 }
 
 .my-bolder{
@@ -257,6 +260,10 @@ nav {
       padding-right: 30px;
       // margin-bottom: 30px;
       color: black;
+    }
+
+    h6:nth-child(1){
+      padding-left: 0px;
     }
 
   }
