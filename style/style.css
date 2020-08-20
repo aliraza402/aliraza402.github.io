@@ -7,7 +7,7 @@ body {
 }
 
 p {
-  font-size: 19px;
+  font-size: 17px;
 }
 
 h3 {
@@ -70,6 +70,10 @@ h4 {
 }
 .my-head-one p {
   color: #f25e24 !important;
+}
+
+.col-md-4, .col-md-6, .col-md-2 {
+  margin-bottom: 20px !important;
 }
 
 .btn-white {
@@ -261,9 +265,9 @@ h4 {
   margin-bottom: 30px;
 }
 .section-7 p {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-size: 14px;
-  line-height: 25px;
+  line-height: 17px;
 }
 .section-7 .row {
   border-bottom: 1px solid lightgray;
@@ -304,16 +308,34 @@ h4 {
   padding-left: 0px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 370px) {
+  .sectionOne .carousel-indicators {
+    display: none;
+  }
+  .sectionOne .my-sec-1-text h2, .sectionOne .my-sec-1-text p {
+    padding-bottom: 2px !important;
+    margin-bottom: 2px !important;
+  }
+  .sectionOne .my-sec-1-text h2 .carousel-indicators, .sectionOne .my-sec-1-text p .carousel-indicators {
+    display: none;
+  }
+  .sectionOne .my-sec-1-text h2 {
+    font-size: 15px !important;
+  }
+  .sectionOne .my-sec-1-text p {
+    font-size: 13px !important;
+  }
+  .sectionOne .my-sec-1-text button {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
   p {
     font-size: 13px !important;
   }
 
   h2 {
-    font-size: 20px !important;
-    font-weight: bolder;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 15px !important;
   }
 
   .service_icon {
@@ -328,7 +350,19 @@ h4 {
 }
 @media (max-width: 575.98px) {
   p {
-    font-size: 15px;
+    font-size: 15px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .group {
+    width: 95% !important;
+    margin: auto;
   }
 
   .sectionOne .background-col {
@@ -341,6 +375,12 @@ h4 {
     top: 0;
     left: 0;
     z-index: 0;
+  }
+  .sectionOne .my-sec-1-text h2 {
+    margin-top: 25%;
+  }
+  .sectionOne .carousel-indicators {
+    display: none;
   }
   .sectionOne nav .navbar-toggler-icon {
     background-image: url("../img/menu-line.svg");
@@ -355,6 +395,10 @@ h4 {
     box-shadow: 0 0 !important;
   }
 
+  .section-2 .my-our-work {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+  }
   .section-2 .service-card {
     background-color: #f4f5f7;
     border-radius: 20px;
@@ -378,7 +422,7 @@ h4 {
   }
   .section-2 .my-service:hover {
     transition: 0.5s ease-in-out;
-    transform: scale(1.03);
+    transform: scale(1.03) !important;
     background-color: #203141;
     color: white;
     border-radius: 15px;
@@ -437,6 +481,7 @@ h4 {
 
   .section-7 .social-icon {
     padding-bottom: 10px;
+    text-align: left !important;
   }
   .section-7 .footer-sec-two {
     display: block;
@@ -505,6 +550,9 @@ h4 {
   .section-5 .my-our-work .my-head-one {
     padding-bottom: 0px !important;
   }
+  .section-5 .cara-img {
+    width: 80% !important;
+  }
   .section-5 .group {
     width: 100%;
   }
@@ -514,6 +562,37 @@ h4 {
     box-shadow: 0 -3px white !important;
     padding-left: 5px !important;
   }
+
+  .cara-img {
+    width: 80% !important;
+  }
+}
+@media (min-width: 1199.98px) {
+  .cara-img {
+    width: 80% !important;
+  }
+}
+.sectionOneContact {
+  height: max-content;
+  background-color: #203141;
+}
+.sectionOneContact .contact-div {
+  border-top-left-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+  background-color: white;
+}
+.sectionOneContact form .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.sectionOneContact form input, .sectionOneContact form textarea {
+  margin-bottom: 25px;
+}
+.sectionOneContact form textarea {
+  border-radius: 15px !important;
 }
 
 /*# sourceMappingURL=style.css.map */

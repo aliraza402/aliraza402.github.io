@@ -13,7 +13,7 @@ body {
 }
 
 p {
-  font-size: 19px;
+  font-size: 17px;
 }
 
 h3 {
@@ -76,6 +76,10 @@ h4 {
   p {
     color: #f25e24 !important;
   }
+}
+
+.col-md-4, .col-md-6, .col-md-2{
+  margin-bottom: 20px !important;
 }
 
 .btn-white {
@@ -308,9 +312,9 @@ h4 {
   }
 
   p {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-size: 14px;
-    line-height: 25px;
+    line-height: 17px;
   }
 
   .row {
@@ -362,15 +366,43 @@ h4 {
 }
 
 // Extra Extra small devices (portrait phones, less than 375px)
-@media (max-width: 375px) {
+@media (max-width: 370px) {
+
+  .sectionOne{
+
+
+    .carousel-indicators{
+      display: none;
+    }
+
+    .my-sec-1-text{
+      h2, p { .carousel-indicators{
+        display: none;
+      }
+  
+        padding-bottom: 2px !important;
+        margin-bottom: 2px !important;
+      }
+      h2{
+        font-size: 15px !important;
+      }
+      p{
+        font-size: 13px !important;
+      }
+      button{
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+    }
+
+  }
+
   p {
     font-size: 13px !important;
   }
   h2 {
-    font-size: 20px !important;
-    font-weight: bolder;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 15px !important;
+  
   }
   .service_icon {
     top: -47px;
@@ -383,10 +415,25 @@ h4 {
   }
 }
 
+
+
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+  
   p {
-    font-size: 15px;
+    font-size: 15px !important;
+  }
+  h2 {
+    font-size: 22px !important;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .group{
+    width: 95% !important;
+    margin: auto;
   }
 
   .sectionOne {
@@ -401,6 +448,15 @@ h4 {
       left: 0;
       z-index: 0;
     }
+
+    .my-sec-1-text{
+      h2{ margin-top: 25%;}
+    } 
+
+    .carousel-indicators{
+      display: none;
+    }
+
 
     nav {
       .navbar-toggler-icon {
@@ -421,6 +477,12 @@ h4 {
   }
 
   .section-2 {
+
+    .my-our-work{
+      padding-right: 3rem !important;
+      padding-left: 3rem !important;
+    }
+
     .service-card {
       background-color: $backOne;
       border-radius: 20px;
@@ -452,7 +514,7 @@ h4 {
 
     .my-service:hover {
       transition: 0.5s ease-in-out;
-      transform: scale(1.03);
+      transform: scale(1.03) !important;
       background-color: $clrPrimary;
       color: white;
       border-radius: 15px;
@@ -520,6 +582,7 @@ h4 {
   .section-7 {
     .social-icon {
       padding-bottom: 10px;
+      text-align: left !important;
     }
 
     .footer-sec-two {
@@ -544,6 +607,8 @@ h4 {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+
+  
 }
 
 // Medium devices (tablets, less than 992px)
@@ -612,6 +677,10 @@ h4 {
 
     }
 
+    .cara-img{
+      width: 80% !important;
+    }
+
     .group {
       width: 100%;
     }
@@ -624,4 +693,51 @@ h4 {
     box-shadow: 0 -3px white !important;
     padding-left: 5px !important;
   }
+  .cara-img{
+    width: 80% !important;
+  }
 }
+
+
+@media (min-width: 1199.98px) {
+  .cara-img{
+    width: 80% !important;
+  }
+}
+
+
+// contact_us page
+
+
+.sectionOneContact{
+
+  height: max-content;
+  background-color: $clrPrimary;
+  
+  .contact-div{
+    border-top-left-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+    background-color: white;
+  }
+  
+  form{
+    .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    
+    input, textarea{
+      margin-bottom: 25px;
+    }
+    textarea{
+      border-radius: 15px !important;
+    }
+  }
+  
+
+}
+
+
