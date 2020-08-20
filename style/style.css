@@ -315,6 +315,16 @@ h4 {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  .service_icon {
+    top: -47px;
+    left: 35%;
+    display: flex;
+  }
+  .service_icon img {
+    width: 50%;
+    margin: auto;
+  }
 }
 @media (max-width: 575.98px) {
   p {
@@ -359,7 +369,7 @@ h4 {
     background-color: #f4f5f7;
     position: absolute;
     top: -47px;
-    left: 35%;
+    left: 35% !important;
     display: flex;
   }
   .section-2 .service_icon img {

@@ -372,6 +372,15 @@ h4 {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .service_icon {
+    top: -47px;
+    left: 35%;
+    display: flex;
+    img {
+      width: 50%;
+      margin: auto;
+    }
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -428,7 +437,7 @@ h4 {
       position: absolute;
 
       top: -47px;
-      left: 35%;
+      left: 35% !important;
       display: flex;
       // transform: translate(-50%, -50%);
 
