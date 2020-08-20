@@ -287,7 +287,7 @@ h4 {
       font-size: 1.2em;
       color: gray;
     }
-    padding-bottom: 10px !important;
+    padding-bottom: 0px !important;
   }
 }
 
@@ -539,12 +539,23 @@ h4 {
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+  p {
+    font-size: 17px;
+  }
+
+  h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
   .section-2 {
     .service-card {
-      background-color: $backOne;
-      border-radius: 20px;
-      // height: 400px;
-      position: relative;
+      height: inherit;
+    }
+
+    .content-service {
+      padding-top: 70px !important;
+      padding-bottom: 30px !important;
     }
 
     .service_icon {
@@ -555,9 +566,8 @@ h4 {
       position: absolute;
 
       top: -47px;
-      left: 35%;
+      left: 26%;
       display: flex;
-      // transform: translate(-50%, -50%);
 
       img {
         width: 50%;
@@ -576,8 +586,33 @@ h4 {
       border-radius: 20px;
     }
   }
+
+  .section-5 {
+    .my-our-work{
+      padding-right: 2% !important;
+      padding-left: 2% !important;
+      h3{
+        padding-bottom: 0 !important;
+      }
+      p{
+        padding-bottom: 0 !important;
+      }
+      .my-head-one{
+        padding-bottom: 0px !important;
+      }
+
+    }
+
+    .group {
+      width: 100%;
+    }
+  }
 }
 
-// // Large devices (desktops, less than 1200px)
-// @media (max-width: 1199.98px) {
-// }
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  #my-nav-active {
+    box-shadow: 0 -3px white !important;
+    padding-left: 5px !important;
+  }
+}
