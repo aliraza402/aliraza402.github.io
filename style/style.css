@@ -1,5 +1,34 @@
+@font-face {
+  font-family: "circularStd";
+  src: url("../fonts/Circular Std Book.ttf");
+}
+body {
+  font-family: circularStd;
+}
+
+p {
+  font-size: 19px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.text-md {
+  font-size: 17px;
+}
+
+.text-normal {
+  font-weight: normal !important;
+}
+
 .backOne {
-  background-color: #fcf4f4;
+  background-color: #f4f5f7;
 }
 
 .backTwo {
@@ -16,122 +45,35 @@
   border: 2px solid #203141;
 }
 
-.sectionOne {
-  height: 100vh;
-  top: 0;
-}
-.sectionOne a {
-  text-decoration: none;
-  font-weight: bold;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
-}
-
-.background-col {
-  height: inherit;
-  width: 73%;
-  background-color: #203141;
-  background-image: url("../img/bg header.png");
-  background-size: 150%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.quote-btn {
-  border-radius: 25px;
-  background-color: #007bff;
-  color: white !important;
-  padding: 5px;
-}
-
-nav img {
-  width: 60px;
-}
-
 .my-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.align-items-center {
+  display: flex;
+  align-items: flex-start;
+  height: 80vh;
+}
+
 .my-bold {
   font-weight: bolder;
 }
 
-.my-head-one {
-  line-height: 10px;
-}
-.my-head-one p {
-  color: red;
+.text-gray {
+  color: gray;
 }
 
-.service-card {
-  background-color: #fcf4f4;
-  border-radius: 20px;
-  height: 400px;
-  position: relative;
+.my-head-one {
+  line-height: 3px;
+}
+.my-head-one p {
+  color: #f25e24 !important;
 }
 
 .btn-white {
   background-color: white;
-}
-
-.service_icon {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #fcf4f4;
-  position: absolute;
-  top: -47px;
-  left: 35%;
-  display: flex;
-}
-.service_icon img {
-  width: 50%;
-  margin: auto;
-}
-
-.my-service:hover {
-  transition: 0.5s ease-in-out;
-  transform: scale(1.11);
-  background-color: #203141;
-  color: white;
-  border-radius: 20px;
-}
-
-.my-nav-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.group {
-  position: relative;
-  width: 90%;
-}
-.group input {
-  align-self: center;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  display: inline;
-}
-.group a {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  position: absolute;
-  right: 0;
-  background-color: #203141;
-  color: white;
-}
-.group a:hover {
-  color: white;
 }
 
 .my-bolder {
@@ -150,9 +92,134 @@ nav img {
   flex: 5;
 }
 
-.section-6 .my-heading {
-  line-height: 5px;
+.h-100-vh {
+  height: 100vh;
 }
+
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.sectionOne {
+  height: 100vh;
+  top: 0;
+}
+.sectionOne a {
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
+.sectionOne .background-col {
+  height: inherit;
+  width: 73%;
+  background-color: #203141;
+  background-image: url("../img/bg header.png");
+  background-size: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.sectionOne nav img {
+  width: 60px;
+}
+.sectionOne #my-nav-active {
+  box-shadow: 0 -3px white !important;
+}
+.sectionOne .carousel-indicators li {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.sectionOne .carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.section-2 .service-card {
+  background-color: #f4f5f7;
+  border-radius: 20px;
+  height: 400px;
+  position: relative;
+}
+.section-2 .service_icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f4f5f7;
+  position: absolute;
+  top: -47px;
+  left: 35%;
+  display: flex;
+}
+.section-2 .service_icon img {
+  width: 50%;
+  margin: auto;
+}
+.section-2 .my-service:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.11);
+  background-color: #203141;
+  color: white;
+  border-radius: 20px;
+}
+
+.section-4 .my-nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section-4 #myTab {
+  border: none;
+}
+.section-4 #myTab .nav-tabs .nav-link {
+  border: none;
+}
+.section-4 #myTab .active {
+  background-color: #203141;
+  border-radius: 20px;
+  color: white;
+  padding: 7px 15px;
+}
+.section-4 #myTab a {
+  text-decoration: none;
+  color: black;
+}
+
+.section-5 .group {
+  position: relative;
+  width: 90%;
+}
+.section-5 .group input {
+  align-self: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: inline;
+}
+.section-5 .group a {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  right: 0;
+  background-color: #203141;
+  color: white;
+}
+.section-5 .group a:hover {
+  color: white;
+}
+
 .section-6 .my-testo {
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -161,30 +228,30 @@ nav img {
 .section-6 .my-testo i {
   font-size: 30px;
 }
-.section-6 .my-testo .client-info {
-  position: absolute;
-  bottom: 0px;
-  left: 25px;
-  transform: translate(0, 10%);
-  line-height: 0px;
-}
 .section-6 .my-testo .client-info img {
   width: 150px;
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
 .section-6 .my-testo .client-info .client-text {
-  position: absolute;
-  right: 0;
-  transform: translate(100%, -90px);
+  line-height: 5px;
+  display: flex;
+  align-items: center;
 }
 .section-6 .my-quote {
-  padding-bottom: 100px !important;
+  padding-bottom: 10px !important;
+}
+.section-6 .my-quote h6 {
+  font-weight: normal;
+  font-size: 1.2em;
+  color: gray;
 }
 
 .section-7 {
   color: gray;
-  font-size: 13px;
+}
+.section-7 h5 {
+  color: #203141;
 }
 .section-7 i {
   font-size: 15px;
@@ -195,6 +262,8 @@ nav img {
 }
 .section-7 p {
   margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 25px;
 }
 .section-7 .row {
   border-bottom: 1px solid lightgray;
@@ -207,15 +276,14 @@ nav img {
   font-size: 15px;
   border-radius: 50%;
   font-weight: bold;
-  border: 1px solid black;
+  border: 0.3px solid #203141;
   color: black;
   padding: 5px;
   margin: 0px 5px;
 }
 .section-7 .social-icon i:hover {
-  background-color: black;
+  background-color: #203141;
   color: white;
-  border: 1px solid black;
   cursor: pointer;
 }
 .section-7 .last-para {
@@ -230,48 +298,178 @@ nav img {
   display: inline;
   padding-left: 30px;
   padding-right: 30px;
-  color: black;
+  color: #203141;
 }
 .section-7 .footer-sec-two h6:nth-child(1) {
   padding-left: 0px;
 }
 
-#myTab {
-  border: none;
-}
-#myTab .nav-tabs .nav-link {
-  border: none;
-}
-#myTab .active {
-  background-color: #203141;
-  border-radius: 20px;
-  color: white;
-  padding: 7px 15px;
-}
-#myTab a {
-  text-decoration: none;
-  color: black;
-}
+@media (max-width: 375px) {
+  p {
+    font-size: 13px !important;
+  }
 
-.carousel-indicators li {
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin-bottom: 10px;
-  padding-left: 3px;
-  padding-right: 3px;
+  h2 {
+    font-size: 20px !important;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
+@media (max-width: 575.98px) {
+  p {
+    font-size: 15px;
+  }
 
-.carousel-indicators .active {
-  width: 12px;
-  height: 12px;
-  margin-bottom: 10px;
-  background-color: #fff;
+  .sectionOne .background-col {
+    height: inherit;
+    width: 100%;
+    background-color: #203141;
+    background-image: url("../img/bg header.png");
+    background-size: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .sectionOne nav .navbar-toggler-icon {
+    background-image: url("../img/menu-line.svg");
+    color: white !important;
+  }
+  .sectionOne nav .ml-auto a {
+    background-color: white;
+    border: 2px solid white;
+    color: #203141;
+  }
+  .sectionOne #my-nav-active {
+    box-shadow: 0 0 !important;
+  }
+
+  .section-2 .service-card {
+    background-color: #f4f5f7;
+    border-radius: 20px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  .section-2 .service_icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f4f5f7;
+    position: absolute;
+    top: -47px;
+    left: 35%;
+    display: flex;
+  }
+  .section-2 .service_icon img {
+    width: 50%;
+    margin: auto;
+  }
+  .section-2 .my-service:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.03);
+    background-color: #203141;
+    color: white;
+    border-radius: 15px;
+  }
+  .section-2 .my-service:hover .service_icon {
+    opacity: 0.3;
+    z-index: -1;
+    background-color: lightgray;
+  }
+
+  .section-4 #myTab {
+    margin-top: 15px;
+    padding: 0 2px;
+  }
+
+  .section-5 .row {
+    padding-top: 20px;
+  }
+  .section-5 .row h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .section-5 .group {
+    width: 100%;
+  }
+  .section-5 .group a {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+
+  .section-6 .my-testo {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    width: 100% !important;
+  }
+  .section-6 .my-testo i {
+    font-size: 30px;
+  }
+  .section-6 .my-testo .client-info {
+    overflow: visible;
+  }
+  .section-6 .my-testo .client-info img {
+    width: 60px;
+  }
+  .section-6 .my-quote {
+    padding-bottom: 10px !important;
+  }
+  .section-6 .my-quote h6 {
+    font-weight: normal;
+    font-size: 1.2em;
+    color: gray;
+  }
+
+  .section-7 .social-icon {
+    padding-bottom: 10px;
+  }
+  .section-7 .footer-sec-two {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-7 .footer-sec-two h6 {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #203141;
+  }
+  .section-7 .footer-sec-two h6:nth-child(1) {
+    padding-left: 0px;
+  }
 }
-
-.form-control:focus {
-  box-shadow: none;
-  outline: none;
+@media (max-width: 991.98px) {
+  .section-2 .service-card {
+    background-color: #f4f5f7;
+    border-radius: 20px;
+    position: relative;
+  }
+  .section-2 .service_icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f4f5f7;
+    position: absolute;
+    top: -47px;
+    left: 35%;
+    display: flex;
+  }
+  .section-2 .service_icon img {
+    width: 50%;
+    margin: auto;
+  }
+  .section-2 .my-service:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.11);
+    background-color: #203141;
+    color: white;
+    border-radius: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
