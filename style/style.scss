@@ -923,8 +923,22 @@ div.collapse.show {
 // contact_us page
 
 .sectionOneContact {
-  height: max-content;
-  background-color: $clrPrimary;
+  // height: max-content;
+  // background-color: $clrPrimary;
+
+  .background-col {
+    height: inherit;
+    width: 73%;
+    background-color: $clrPrimary;
+    background-image: url("../img/bg\ header.png");
+    background-size: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+
 
   nav {
     #my-nav-active {
@@ -956,9 +970,5 @@ div.collapse.show {
     }
   }
 
-  .my-request-quote {
-    background-color: white !important;
-    border: 2px solid white !important;
-    color: $clrPrimary !important;
-  }
+
 }

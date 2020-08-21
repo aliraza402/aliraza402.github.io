@@ -770,9 +770,16 @@ div.collapse.show {
     width: 80% !important;
   }
 }
-.sectionOneContact {
-  height: max-content;
+.sectionOneContact .background-col {
+  height: inherit;
+  width: 73%;
   background-color: #203141;
+  background-image: url("../img/bg header.png");
+  background-size: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 .sectionOneContact nav #my-nav-active {
   box-shadow: 0 0 !important;
@@ -795,11 +802,6 @@ div.collapse.show {
 }
 .sectionOneContact form textarea {
   border-radius: 15px !important;
-}
-.sectionOneContact .my-request-quote {
-  background-color: white !important;
-  border: 2px solid white !important;
-  color: #203141 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
