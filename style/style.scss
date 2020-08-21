@@ -33,6 +33,20 @@ h4 {
   font-weight: normal !important;
 }
 
+.h-80-vh {
+  height: 80vh !important;
+}
+
+.h-mc {
+  height: max-content !important;
+}
+
+.display-5 {
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 1;
+}
+
 .backOne {
   background-color: $backOne;
 }
@@ -113,6 +127,10 @@ div.collapse.show {
 
 .my-bolder {
   font-weight: bolder;
+}
+
+.my-service-btn:hover{
+  color: white;
 }
 
 .h-flex {
@@ -405,6 +423,109 @@ div.collapse.show {
   }
 }
 
+// MODAL CSS
+.my-quote-modal {
+  .modal-header {
+    // #374A5E
+    background-color: $clrPrimary;
+    color: white;
+  }
+  form {
+    .form-control:focus {
+      color: #495057;
+      background-color: #fff;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    :nth-child(1),
+    :nth-child(2) {
+      margin-bottom: 15px !important;
+    }
+    textarea {
+      border-radius: 15px !important;
+    }
+
+    textarea,
+    select {
+      border-radius: 23px !important;
+    }
+  }
+}
+
+//  --------------------------------------
+// contact_us page
+
+.sectionOneContact {
+  // height: max-content;
+  // background-color: $clrPrimary;
+
+  .background-col {
+    height: inherit;
+    width: 73%;
+    background-color: $clrPrimary;
+    background-image: url("../img/bg\ header.png");
+    background-size: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .contact-div {
+    border-top-left-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+    background-color: white;
+  }
+
+  form {
+    .form-control:focus {
+      color: #495057;
+      background-color: #fff;
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    input,
+    textarea {
+      margin-bottom: 25px;
+    }
+    textarea {
+      border-radius: 15px !important;
+    }
+  }
+}
+
+// ---------------------------------------
+// service page
+.service_page {
+  .sectionOneService{
+    // margin-bottom: 0 !important;
+  }
+  .sectionTwoService {
+    .row{
+      padding-top: 3.5rem !important;
+      padding-bottom: 3.5rem !important;
+    }
+  }
+  .service-page-icon{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    filter: grayscale(100%);
+    margin: 10px 5px;
+    padding: 4px 4px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+  }
+  .service-page-icon:hover{
+    filter: grayscale(0%);
+  }
+}
+
+// responsive
 // Extra Extra small devices (portrait phones, less than 375px)
 @media (max-width: 370px) {
   .sectionOne {
@@ -631,13 +752,30 @@ div.collapse.show {
       }
     }
   }
+
+  // serivce page
+  .service_page {
+    .sectionTwoService {
+    }
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
 
 @media (min-width: 575.98px) and (max-width: 767.98px) {
-  .row img {
+  .section-1 .row img {
     display: none;
+  }
+
+  // serivce page
+  .sectionTwoService {
+    .col-md-6:nth-child(1),
+    .col-md-6:nth-child(2) {
+      margin-bottom: 0px !important;
+    }
+    img {
+      display: block;
+    }
   }
 }
 
@@ -918,57 +1056,4 @@ div.collapse.show {
   .cara-img {
     width: 80% !important;
   }
-}
-
-// contact_us page
-
-.sectionOneContact {
-  // height: max-content;
-  // background-color: $clrPrimary;
-
-  .background-col {
-    height: inherit;
-    width: 73%;
-    background-color: $clrPrimary;
-    background-image: url("../img/bg\ header.png");
-    background-size: 150%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
-
-
-
-  nav {
-    #my-nav-active {
-      box-shadow: 0 0 !important;
-    }
-  }
-
-  .contact-div {
-    border-top-left-radius: 40px !important;
-    border-bottom-right-radius: 40px !important;
-    background-color: white;
-  }
-
-  form {
-    .form-control:focus {
-      color: #495057;
-      background-color: #fff;
-      border-color: #80bdff;
-      outline: 0;
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-    }
-
-    input,
-    textarea {
-      margin-bottom: 25px;
-    }
-    textarea {
-      border-radius: 15px !important;
-    }
-  }
-
-
 }
