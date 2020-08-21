@@ -129,7 +129,7 @@ div.collapse.show {
   font-weight: bolder;
 }
 
-.my-service-btn:hover{
+.my-service-btn:hover {
   color: white;
 }
 
@@ -501,16 +501,16 @@ div.collapse.show {
 // ---------------------------------------
 // service page
 .service_page {
-  .sectionOneService{
+  .sectionOneService {
     // margin-bottom: 0 !important;
   }
   .sectionTwoService {
-    .row{
+    .row {
       padding-top: 3.5rem !important;
       padding-bottom: 3.5rem !important;
     }
   }
-  .service-page-icon{
+  .service-page-icon {
     display: inline-block;
     height: 35px;
     width: 35px;
@@ -518,9 +518,15 @@ div.collapse.show {
     margin: 10px 5px;
     padding: 4px 4px;
     cursor: pointer;
-    transition: 0.6s ease-in-out;
+    transition: 0.3s ease-in-out;
+
+    img .img-fluid{
+      height: 100% !important;
+      width: 100% !important;
+    }
+
   }
-  .service-page-icon:hover{
+  .service-page-icon:hover {
     filter: grayscale(0%);
   }
 }
@@ -571,6 +577,10 @@ div.collapse.show {
       width: 50%;
       margin: auto;
     }
+  }
+  .centerOnSm{
+    text-align: center  !important;
+    background-color: red;
   }
 }
 
@@ -731,7 +741,7 @@ div.collapse.show {
   .section-7 {
     .social-icon {
       padding-bottom: 10px;
-      text-align: left !important;
+      text-align: center !important;
     }
 
     .footer-sec-two {
@@ -758,7 +768,59 @@ div.collapse.show {
     .sectionTwoService {
     }
   }
+
+  .centerOnSm{
+    text-align: center  !important;
+  }
+
 }
+
+// about page
+
+.about_page{
+  .sectionOneAbout{
+    height: 100% !important;
+    top: 0 !important;
+  
+    .background-col{
+      height: inherit !important;
+    }
+  }
+
+  .section-3-About{
+
+    .my-card-counter{
+      padding-top: 30px !important;
+    }
+
+    .img-div{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: $backOne;
+      position: absolute;
+      padding: 15px;
+        
+      top: 0px;
+      left: 50%;
+      display: flex;
+      transform: translate(-50%, -50%);
+  
+      img {
+        width: 50%;
+        margin: auto;
+      }
+    }
+
+    .my-center h3{
+      margin-bottom: 5px !important;
+    }
+
+  }
+
+
+}
+
 
 // Small devices (landscape phones, less than 768px)
 
@@ -777,6 +839,11 @@ div.collapse.show {
       display: block;
     }
   }
+
+  .centerOnSm{
+    text-align: center  !important;
+  }
+
 }
 
 @media (max-width: 767.98px) {
@@ -938,7 +1005,7 @@ div.collapse.show {
   .section-7 {
     .social-icon {
       padding-bottom: 10px;
-      text-align: left !important;
+      text-align: center !important;
     }
 
     .footer-sec-two {
@@ -1039,6 +1106,15 @@ div.collapse.show {
       width: 100%;
     }
   }
+
+  // .service_page {
+  //   .sectionOneService {
+  //     height: 100% !important;
+  //   }
+  //   .background-col{
+  //     height: fit-content !important;
+  //   }
+  // }
 }
 
 // Large devices (desktops, less than 1200px)
